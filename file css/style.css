@@ -40,10 +40,9 @@ p{
 }
 
 .description{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
     font-size: 20px;
+    width: 40%;
+    padding: 3rem;
 }
 
 
@@ -55,25 +54,37 @@ button{
 }
 
 .jumbotron{
-    background-color:skyblue;
     color: black;
-    width: 100%;
-    height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 20px;
 }
 .jumbotron img{
-    width: 70%;
-    height: 110%;
+    width: 100%;
+    height: 130%;
+}
+.img{
+    width: 60%;
+    padding: 3rem;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.skyblue{
+    background-color: skyblue;
 }
 
 
 h1{
-    text-align: center;
-    font-weight: bold;
-    background-color:skyblue;
-    font-size: xxx-large;
+    font-size: 5rem;
+    padding: 3rem;
+}
+
+.container1000{
+    width: 1000px;
+    margin: 0 auto;
 }
 
 
@@ -95,21 +106,21 @@ h2{
     color:black;
     text-align: center;
     margin-bottom: 1rem;
-    font-size: xx-large;
     margin-top: 5rem;
+    font-size: 2rem;
 }
 h3{
     text-align: center;
-    font-size: x-large;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    font-size: 2rem;
 }
 h4{
     color:black;
     text-align: start;
     margin-bottom: 1rem;
-    font-size: xx-large;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -130,11 +141,18 @@ h4{
 }
 
 .team{
-    color:black;
-    width: 100%;
-    height: auto;
-    text-align: center;
     margin-bottom: 2rem;
+    border: solid lightgrey;
+}
+.ufficio{
+    text-align: end;
+    position: absolute;
+    bottom: 80px;
+    right: 20px;  
+}
+
+.enterprise{
+    position: relative;
 }
 
 .partner{
@@ -155,15 +173,12 @@ h4{
 }
 
 .operazioni{
-    width: 100%;
-    height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .operazioni img{
     width: 33%;
-    height: 50%;
 }
 .schede{
     text-align: center;
@@ -255,3 +270,12 @@ footer{
     height: 100%;
     padding: 1rem;
 }
+
+.richiesta p{
+    display: none;
+}
+
+.richiesta:hover p{
+    display: block;
+    padding: 2rem;
+}   
